@@ -12,19 +12,6 @@
 
 # Example 2:
 # arr = [7, 10, 4, 3, 20, 15]
-# Output: 8.5
-
-# import random
-# def sorted(arr,k):
-#     if len(arr)==1:
-#         return arr[0]
-    
-#     p=random.choice(arr)
-#     lows=[ele for ele in arr if <p]
-#     high=[ele for ele in arr if > p]
-#     pivots=[ele for ele in ar ele == p]
-    
-#     if k < len(lows):
         
 import random
 
@@ -50,11 +37,9 @@ def find_median(arr):
         return sortarr(arr, n // 2)
     else:
         return (sortarr(arr, n // 2 - 1) + sortarr(arr, n // 2)) / 2
-    
-#example 1    
+ 
 arr1 = [3, 2, 1, 4, 5]
 print(find_median(arr1))  
 
-#example 2
 arr2 = [7, 10, 4, 3, 20, 15]
 print(find_median(arr2))          
